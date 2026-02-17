@@ -1,11 +1,9 @@
-import type { NextConfig } from "next";
 import withPWA from "next-pwa";
+import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    turbo: false, // ⬅️ DAS IST DER WICHTIGE TEIL
-  },
+  turbopack: {}, // 👈 DAS ist der Fix in Next 16
 };
 
 export default withPWA({
