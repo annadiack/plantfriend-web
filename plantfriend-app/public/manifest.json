@@ -1,0 +1,12 @@
+{
+  "name": "PlantFriend",
+  "short_name": "PlantFriend",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0f0e",
+  "theme_color": "#0b0f0e",
+  "icons": [
+    { "src": "/PlantFriend.png", "sizes": "192x192", "type": "png" },
+    { "src": "/PlantFriend.png", "sizes": "512x512", "type": "png" }
+  ]
+}
