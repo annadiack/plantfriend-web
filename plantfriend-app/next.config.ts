@@ -3,9 +3,11 @@ import withPWA from "next-pwa";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  experimental: {
+    turbo: false, // ⬅️ DAS IST DER WICHTIGE TEIL
+  },
 };
 
 export default withPWA({
   dest: "public",
-  disable: process.env.NODE_ENV === "development",
 })(nextConfig);
